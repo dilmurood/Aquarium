@@ -13,9 +13,10 @@ public class Fish : Location, IComparable<Fish>
     }
     public void NextLocation()
     {
-        maxLifeCycle--;
-        if(maxLifeCycle <= 0)
+        if(maxLifeCycle <= 1)
             IsDead = true;
+
+        maxLifeCycle--;
         UpdateLocation();
     }
     public override string ToString()

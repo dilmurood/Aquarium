@@ -41,7 +41,7 @@
     public static void Move(Fish fish)
     {
         fish.NextLocation();
-        System.Console.WriteLine("new location: \n" + fish.ToString() + "\n========================================");
+        Console.WriteLine("new location: \n" + fish.ToString() + "\n========================================");
     }
 
     public static bool IsDead(Fish fish)
@@ -74,6 +74,6 @@
                 }
             }
         }
-        System.Console.WriteLine("No match is found.......................");
+        Console.WriteLine("No match is found.......................");
     }
 }
